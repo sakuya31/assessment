@@ -98,9 +98,3 @@ function assessment(userName) {
   result = result.replace(/\{userName\}/g, userName);
   return result;
 }
-
-//テスト
-console.assert(
-  assessment("太郎") === assessment("太郎"),
-  "入力が同じ名前なら同じ診断結果を出力する処理が正しくありません。"
-);
